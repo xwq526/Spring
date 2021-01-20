@@ -73,7 +73,7 @@ public class TestArgumentController {
     //springmvc自动实例化user对象，根据请求key获取值，注入到user对象的属性中
     @PostMapping("/login/pojo2")
     public Object loginPojo2(User user) {
-        log.debug("获取到请求路径参数: username={},password={},i={}",user.getUsername(),user.getPassword(),user.getI());
+//        log.debug("获取到请求路径参数: username={},password={},i={}",user.getUsername(),user.getPassword(),user.getI());
         Map<String,Object> map = new HashMap<>();
         map.put("ok",true);
         return map;
