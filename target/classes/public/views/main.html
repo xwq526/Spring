@@ -21,7 +21,7 @@
             $.ajax({
                 url:"../data/articleList.json",
                 type:"get",//这是默认的，可以不写
-                contentType:"json",//响应的数据类型
+                dataType:"json",//响应的数据类型
                 success:function (resp) {
                     // alert(JSON.stringify(resp));
                     if (resp.success) {
